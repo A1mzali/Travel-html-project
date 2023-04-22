@@ -37,11 +37,16 @@ body {
 	background-color: darkseagreen;
 }
 
-
 /* Header */
 .header{
-  min-height: 40px;
+  min-height: 940px;
   background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%), #204434;
+	padding-top: 44px;
+	color: #fff;
+	overflow: hidden;
+}
+.header a {
+	color: #fff;
 }
 
 .header::after {
@@ -54,4 +59,277 @@ body {
 
   background-image: url('./../img/header/header-bottom.svg');
   background-size: 100%;
+}
+
+.header__top{
+	margin-bottom: 86px;
+
+}
+
+.header__row{
+	display: flex;
+}
+
+.header__content{
+	max-width: 592px;
+	position: relative;
+	z-index: 1;
+}
+
+.header__img{
+	position: relative;
+	flex-grow: 1;
+	
+}
+
+.header__img img{
+	position: absolute;
+	top: -181px;
+	right: -90px;
+	max-width: unset;
+	width: 894px;
+	height: 940px;
+
+}
+
+/* Nav */
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 80px;
+	align-items: center;
+}
+
+.nav__list {
+  display: flex;
+	column-gap: 80px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.nav__list a{
+	position: relative;
+}
+
+.nav__list a.active::after,
+.nav__list a:hover::after{
+	content: "";
+
+  position: absolute;
+	left: 0;
+	bottom: -6px;
+	right: 10px;
+
+	display: block;
+	/* width: 35px; */
+	height: 4px;
+	background-color: #C4C4C4;
+	border-radius: 100px;
+
+}
+
+.nav__login {
+  display: flex;
+	column-gap: 25px;
+	font-size: 15px;
+	font-weight: 50;
+	align-items: center;
+}
+
+/* Logo */
+
+.logo{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;	
+}
+.logo a{
+	color: inherit;
+}
+
+/* Button */
+
+.btn{
+	display: inline-block;
+	padding: 13px 44px;
+
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+	border-radius: 100px;
+}
+
+.btn:hover{
+ color: rgb(225, 228, 21);
+ transition: color 0.2s ease;
+}
+
+.btn:active{
+	position: relative;
+	top: 1px;
+}
+
+/* Header content */
+
+.header__content{
+ 
+}
+
+.header__badge{
+	margin-bottom: 7px;
+	display: inline-block;
+	padding: 11px 30px 12px 31px;
+  font-size: 18px;
+	font-weight: 500;
+
+	background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+
+.header__title{
+	margin-bottom: 30px;
+	font-size: 55px;
+}
+
+.header__text{
+	margin-bottom: 68px;
+	font-size: 28px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.header__btn{
+	display: inline-block;
+	padding: 27px 48px;
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+ 	border-radius: 27px;
+	
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.header__btn:hover{
+	color: rgb(225, 228, 21);
+	transition: color 0.2s ease;
+}
+.header__btn:active{
+	position: relative;
+	top: 1px;
+}
+
+/* Destinations */
+
+.destinations{
+	padding: 96px 0 100px;
+	overflow-x: hidden;
+}
+
+.destinations__row{
+	display: flex;
+	column-gap: 50px;
+}
+
+.destinations__content{
+  max-width: 456px;
+}
+
+.destinations__title{
+	margin-bottom: 15px;
+	font-size: 55px;
+	font-weight: 600;
+}
+
+.destinations__title span {
+   font-size: 30px;
+}
+
+.destinations__text{
+	margin-bottom: 60px;
+	font-size: 25px;
+	font-weight: 500;
+	color: var(--secondary);
+}
+
+.btn{
+	display: inline-block;
+	padding: 25px 45px;
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+ 	border-radius: 27px;
+	
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.btn:hover{
+	color: rgb(225, 228, 21);
+	transition: color 0.2s ease;
+}
+.btn:active{
+	position: relative;
+	top: 1px;
+}
+
+/* Slider */
+.destinations__slider{
+	width: 1110px;
+	flex-shrink: 0;
+}
+
+.slider{
+	position: relative;
+	height: 456px;
+}
+
+.slider__item{
+	margin-top: 27px;
+	width: 335px;
+	height: 402px;
+	object-fit: cover;
+	border-radius: 35px;
+
+	transition:  0.2s ease-in;
+}
+
+.slider .center .slider__item{
+	margin-top: 0;
+	width: 380px;
+	height: 456px;
+
+}
+
+.slider__btn{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+
+	display: block;
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+}
+
+.slider__btn--prev{
+	left: -27px;
+	padding-left: 26px;
+	justify-content: flex-start;
+	
+}
+.slider__btn--next{
+	right: -27px;
+	padding-right: 26px;
+	justify-content: flex-end;
+
 }
