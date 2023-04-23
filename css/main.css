@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './buttons.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
@@ -90,6 +91,8 @@ body {
 	width: 894px;
 	height: 940px;
 
+	pointer-events: none;
+
 }
 
 /* Nav */
@@ -107,7 +110,6 @@ body {
 	font-size: 15px;
 	font-weight: 500;
 }
-
 
 .nav__list a{
 	position: relative;
@@ -129,7 +131,6 @@ body {
 	border-radius: 100px;
 
 }
-
 
 .nav__list--footer a{
 	color: var(--orange);
@@ -163,39 +164,12 @@ body {
 .logo--footer{
 	color: var(--orange);
 }
+
 .logo a{
 	color: inherit !important;
 }
 
-/* Button */
-
-.btn{
-	display: inline-block;
-	padding: 13px 44px;
-
-	font-size: 15px;
-	font-weight: 500;
-	color: #fff;
-
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
-	border-radius: 100px;
-}
-
-.btn:hover{
- color: rgb(225, 228, 21);
- transition: color 0.2s ease;
-}
-
-.btn:active{
-	position: relative;
-	top: 1px;
-}
-
 /* Header content */
-
-.header__content{
- 
-}
 
 .header__badge{
 	margin-bottom: 7px;
@@ -218,26 +192,6 @@ body {
 	font-size: 28px;
 	font-weight: 700;
 	color: rgba(255, 255, 255, 0.5)
-}
-
-.header__btn{
-	display: inline-block;
-	padding: 27px 48px;
-
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
- 	border-radius: 27px;
-	
-	font-size: 25px;
-	font-weight: 600;
-}
-
-.header__btn:hover{
-	color: rgb(225, 228, 21);
-	transition: color 0.2s ease;
-}
-.header__btn:active{
-	position: relative;
-	top: 1px;
 }
 
 /* Destinations */
@@ -271,26 +225,6 @@ body {
 	font-size: 25px;
 	font-weight: 500;
 	color: var(--secondary);
-}
-
-.btn{
-	display: inline-block;
-	padding: 25px 45px;
-
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
- 	border-radius: 27px;
-	
-	font-size: 20px;
-	font-weight: 600;
-}
-
-.btn:hover{
-	color: rgb(225, 228, 21);
-	transition: color 0.2s ease;
-}
-.btn:active{
-	position: relative;
-	top: 1px;
 }
 
 /* Slider */
@@ -399,10 +333,6 @@ body {
 	height: 134px;
 	background: #FF794E;
 	border-radius: 71.5px;
-}
-
-.review__client-desc{
-
 }
 
 .review__client-desc-name{
@@ -516,27 +446,6 @@ body {
 .subscribe-form__input::placeholder{
 	color: var(--secondary);
 }
-
-.subscribe-form__btn{
-	display: inline-block;
-	padding: 34px 86px;
-
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
- 	border-radius: 35px;
-	
-	font-size: 25px;
-	font-weight: 600;
-}
-
-.subscribe-form__btn:hover{
-	color: rgb(225, 228, 21);
-	transition: color 0.2s ease;
-}
-.subscribe-form__btn:active{
-	position: relative;
-	top: 1px;
-}
-
 
 /* Footer */
 
